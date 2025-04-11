@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: rn3t72jd2-nodejs-repository
+spec:
+  url: https://github.com/xjiangorg/rn3t72jd2-nodejs

@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: rn3t72jd2-nodejs-gitops
+  description: This is GitOps manifest for rn3t72jd2-nodejs   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=rn3t72jd2-nodejs
+    backstage.io/kubernetes-id: rn3t72jd2-nodejs 
+    backstage.io/techdocs-ref: dir:. 
+    jenkins.io/job-full-name: rn3t72jd2-nodejs-gitops
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:rn3t72jd2-nodejs
